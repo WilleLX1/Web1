@@ -2,7 +2,7 @@
  Alla uppgifter inom webutveckling 1 lägger jag här
 
 # How To Use
-Gör dessa övningar i HTML, om du fastnar kan du titta på mina uppgifter. De ligger som filer i repositoriet.
+Gör dessa övningar i HTML, om du fastnar kan du titta på mina uppgifter eller kolla om du kan lösa dem själv med hjälp av [MonsterAnkan](https://ntihbg.se/monsterankan/html/2text.html). De ligger som filer i repositoriet.
 
 # Uppgifter 1:
 
