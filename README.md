@@ -5,6 +5,6 @@
 # Uppgifter 1:
 
 ### Uppgift 1:
-![Alt Text](UppgiftBilder/1Uppgift1.jpg)
-![Alt Text](UppgiftBilder/1Uppgift2.jpg)
-![Alt Text](UppgiftBilder/1Uppgift3.jpg)
+![Alt Text](UppgiftBilder/1Uppgift1.png)
+![Alt Text](UppgiftBilder/1Uppgift2.png)
+![Alt Text](UppgiftBilder/1Uppgift3.png)
