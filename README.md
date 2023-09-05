@@ -1,6 +1,8 @@
 # Web1
  Alla uppgifter inom webutveckling 1 lägger jag här
 
+# How To Use
+Gör dessa övningar i HTML, om du fastnar kan du titta på mina uppgifter. De ligger som filer i repositoriet.
 
 # Uppgifter 1:
 
@@ -56,4 +58,6 @@
 ![Alt Text](UppgiftBilder/2Uppgift11.png)
 ### Uppgift 12:
 ![Alt Text](UppgiftBilder/2Uppgift12.png)
+
+# Slut på uppgifter, det kommer komma mer med tiden...
 
