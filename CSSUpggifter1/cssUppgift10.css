@@ -1,0 +1,14 @@
+body {
+    background-color: aqua;
+}
+h1 {
+    font-family: Tahoma;
+}
+p {
+    font-family: Comic Sans MS;
+    color: black;
+}
+.LinkClass {
+    font-family: Comic Sans MS;
+    color: blue;
+}

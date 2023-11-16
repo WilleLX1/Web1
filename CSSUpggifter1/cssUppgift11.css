@@ -1,0 +1,22 @@
+body {
+    background-color: green;
+}
+
+.Rubrik2 {
+    color: red;
+    font-family: Myriad Pro;
+}
+.Rubrik1 {
+    color: black;
+    font-family: Myriad Pro;
+}
+
+.Text1 {
+    background-color: lightblue;
+    font-family: Arial;
+}
+.Text2 {
+    background-color: gray;
+    font-family: Arial;
+    font-style: italic;
+}
