@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vandelay - Contact</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="default.css">
+        <style>
+            .text {
+                padding: 20px;
+                font-size: 18px;
+            }
+            .text p, h2 {
+                margin: 20px;
+            }
+            .center {
+                display: block;
+                margin: 0 auto;
+                padding: 10px;
+            }
+
+            .form {
+                padding: 20px;
+                margin-top: 20px;
+            }
+            .full-width {
+                width: 100%;
+                height: 100%;
+            }
+            .full-width input[type=text], .full-width textarea {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <div class="background">
+                <div class="allContent">
+                    <!-- Title -->
+                    <div class="title">
+                        <div id="left">
+                            <a href="https://google.com" onclick="event.preventDefault(); window.location.href = 'https:/bing.com';">
+                                <img src="Image/entire-title.png" width="50%" style="float: left;">
+                            </a>
+                        </div>
+                        <div id="right">
+                            <div class="links">
+                                <a href="index.html">about</a>
+                                <a href="services.html">services</a>
+                                <a href="media.html">media</a>
+                                <a href="contact.html">contact</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image -->
+                    <div class="image">
+                        <img src="Image/field-disc.png" width="100%">
+                    </div>
+
+                    <!-- Text and Form -->
+                    <table>
+                        <tr>
+                            <!-- Text -->
+                            <td width="50%" style="vertical-align: top;">
+                                <div class="text">
+                                    <h2>Contact Us</h2>
+                                    <p>
+                                        Based on responses from more than 212,000 federal employees last year, Vandelay's workforce continues to score well and the agency is ranked third among large federal agencies as a best place to work.
+                                        <br><br>
+                                        The rankings also reveal that Vandelay ranked second among all federal agencies in the categories of Effective Leadership, Teamwork and Support for Diversity, as well as other areas.
+                                    </p>
+
+                                    <h2>Work at Vandelay</h2>
+                                    <p>
+                                        Since its inception in 1958, Vandelay has accomplished many great scientific and technological feats in air and space. Vandelay technology also has been adapted for many nonaerospace uses by the private sector. Vandelay remains a leading force in scientific research and in stimulating public interest in aerospace exploration, as well as science and technology in general.
+                                        <br><br>
+                                        Perhaps more importantly, our exploration of space has taught us to view Earth, ourselves, and the universe in a new way. While the tremendous technical and scientific accomplishments of Vandelay demonstrate vividly that humans can achieve previously inconceivable feats, we also are humbled by the realization that Earth is just a tiny "blue marble" in the cosmos.
+                                    </p>
+                                </div>
+                            </td>
+                            <!-- Form (Using Name, E-Mail, Message) -->
+                            <td width="50%" style="vertical-align: top;">
+                                <div class="form">
+                                    <form action="contact.php" method="post" class="full-width">
+                                        <label for="name">Name:</label><br>
+                                        <input type="text" id="name" name="name"><br>
+                                        <br>
+                                        <label for="email">E-Mail:</label><br>
+                                        <input type="text" id="email" name="email"><br>
+                                        <br>
+                                        <label for="message">Message:</label><br>
+                                        <textarea id="message" name="message" rows="10" cols="30"></textarea><br>
+                                        <input type="submit" value="Submit" class="center">
+                                    </form>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <!-- Copyright -->
+                    <div class="copyright">
+                        <hr>
+                        <p>Copyright © Vandelay Industries 2011</p>
+                    </div>
+                </div>
+            </div>
+        </center>
+
+    </body>
+</html>

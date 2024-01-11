@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vandelay - Services</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="default.css">
+        <style>
+            .text {
+                padding: 20px;
+                font-size: 18px;
+            }
+            .text p, h2 {
+                margin: 20px;
+            }
+
+            .slider {
+                position: relative;
+                width: 100%;
+                height: auto;
+            }
+
+            .slider img {
+                width: 1000px;  /* or any size you want */
+                height: 500px; /* or any size you want */
+                object-fit: cover;
+            }
+
+            @media screen and (max-width: 600px) {
+                .slider img {
+                    width: 100%;
+                }
+            }
+
+            .prev, .next {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 2em;
+                background: none;
+                border: none;
+                color: #000;
+                opacity: 0.6;
+                cursor: pointer;
+                z-index: 1;
+            }
+
+            .prev {
+                left: 0;
+            }
+
+            .next {
+                right: 0;
+            }
+
+            .dot {
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+
+            .active {
+                background-color: #717171;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <div class="background">
+                <div class="allContent">
+                    <!-- Title -->
+                    <div class="title">
+                        <div id="left">
+                            <img src="Image/entire-title.png" width="50%" style="float: left;">
+                        </div>
+                        <div id="right">
+                            <div class="links">
+                                <a href="index.html">about</a>
+                                <a href="services.html">services</a>
+                                <a href="media.html">media</a>
+                                <a href="contact.html">contact</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image -->
+                    <div class="image">
+                        <img src="Image/field-disc.png" width="100%">
+                    </div>
+                    
+                    <!-- All Text -->
+                    <div class="text">
+                        <h2 style="text-align: left;">Services</h2>
+                        <p style="text-align: left;">
+                            Since its inception in 1958, Vandelay delivers fantastic images of space. Perhaps more importantly, our exploration of space has taught us to view Earth, ourselves, and the universe in a new way. While the tremendous technical and scientific accomplishments of Vandelay demonstrate vividly that humans can achieve previously inconceivable feats, we also are humbled by the realization that Earth is just a tiny "blue marble" in the cosmos.
+                        </p>
+                    </div>
+
+                    <!-- Image slider -->
+                    <div class="slider">
+                        <button class="prev" onclick="prevImage()">&#10094;</button>
+                        <img id="sliderImage" src="Image/1.jpg" width="90%">
+                        <p id="caption"></p>
+                        <button class="next" onclick="nextImage()">&#10095;</button>
+
+                        <!-- Dots -->
+                        <div id="dots">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+
+                    <!-- Copyright -->
+                    <div class="copyright">
+                        <hr>
+                        <p>Copyright © Vandelay Industries<br>2011</p>
+                    </div>
+                </div>
+            </div>
+        </center>
+
+        <!-- JavaScript -->
+        <script>
+            var imageIndex = 1;
+            var totalImages = 6;
+            var captions = [
+                "Nebula",
+                "Svart hål",
+                "Galax",
+                "Komet",
+                "Mörk materia",
+                "Planet"
+            ];
+
+            function changeImage() {
+                if (imageIndex > totalImages) {
+                    imageIndex = 1;
+                } else if (imageIndex < 1) {
+                    imageIndex = totalImages;
+                }
+                document.getElementById('sliderImage').src = 'Image/' + imageIndex + '.jpg';
+                document.getElementById('caption').innerText = captions[imageIndex - 1];
+
+                // Update dots
+                var dots = document.getElementsByClassName('dot');
+                for (var i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                dots[imageIndex - 1].className += " active";
+            }
+
+            function nextImage() {
+                imageIndex++;
+                changeImage();
+            }
+
+            function prevImage() {
+                imageIndex--;
+                changeImage();
+            }
+
+            setInterval(nextImage, 10000); // Change image every 10 seconds
+        </script>
+    </body>
+</html>
